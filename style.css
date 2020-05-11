@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 16px;
+	font-family: 'Public Sans', sans-serif;
+}
+header {
+	width: 100%;
+	height: 50px;
+}
+#logo {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+header ul {
+	float: left;
+	margin: 0 20%;
+	width: 40%;
+	padding: 0px;
+}
+header ul li {
+	display: inline-block;
+	list-style-type: none;
+	height: 34px;
+	padding: 10px 16px 0px;
+}
+header ul li:hover {
+	border-bottom: 10px solid #000;
+	border-image-slice: 1;
+  	border-width: 5px;
+	border-image-source: linear-gradient(to right, hsl(136, 65%, 51%) 51%, hsl(192, 70%, 51%) 100%);
+}
+header ul li a {
+	text-decoration: none;
+	color: hsl(233, 8%, 62%);
+	padding: 0 5px;
+}
+header input {
+	float: right;
+}
+input {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0 0 0;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%) 51%, hsl(192, 70%, 51%) 100%);
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+}
+input:hover {
+	opacity: 0.7;
+}
+#hamburger, #close {
+	display: none;
+}
+#banking {
+	background-color: hsl(0, 0%, 98%);
+	height: 600px;
+}
+#banking .content-container {
+	width: 30%;
+	margin-left: 10%;
+	padding-top: 10%;
+	float: left;
+}
+.content-container h1 {
+	font-size: 40px;
+	margin-bottom: 5%;
+	color: hsl(233, 26%, 24%);	
+}
+.content-container p {
+	line-height: 2;
+	margin-bottom: 5%;
+	color: hsl(233, 8%, 62%);
+}
+#banking .img-container {
+	width: 58%;
+	height: 600px;
+	float: right;
+	display: inline-block;
+	background-image: url(images/bg-intro-desktop.svg);
+	background-position: left;
+    position: relative;
+}
+.background {
+    visibility: hidden;
+    width: 100%;
+}
+.mockups {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+.mockups img {
+    transform: translate(120px, -170px);
+    width: 100%;
+}
+#benefits {
+	background-color: hsl(220, 16%, 96%);
+}
+#benefits h1 {
+	padding: 10% 0 2% 10%;
+	font-size: 30px;
+	color: hsl(233, 26%, 24%);
+}
+#benefits> p {
+	width: 45%;
+	color: hsl(233, 8%, 62%);
+	margin-left: 10%;
+	margin-bottom: 8%;
+}
+#benefits article {
+	width: 22%;
+	height: 300px;
+	display: inline-block;
+}
+#benefits article:first-of-type {
+	margin-left: 7%;
+}
+#benefits article h3 {
+	color:  hsl(233, 26%, 24%);
+	margin: 10% 0px;
+}
+#benefits article p {
+	width: 87.5%;
+	margin: 5% 0px;
+	color: hsl(233, 8%, 62%);
+}
+#articles {
+	background-color: hsl(0, 0%, 98%);
+	padding-bottom: 30px;
+}
+#articles h1 {
+	color: hsl(233,26%,24%);
+	font-size: 30px;
+	margin: 0 0 5% 5%;
+	padding-top: 5%;
+}
+#articles article {
+	width: 20%;
+	height: 350px;
+	background-color: hsl(0, 0%, 100%);
+	display: inline-block;
+	margin-right: 2%;
+}
+#articles article:first-of-type{
+	margin-left: 5%;
+}
+#articles article img {
+	width: 100%;
+	height: 180px;
+	border-radius: 5px;
+}
+#madeBy {
+	font-size: 10px;
+	color: hsl(233,8%,62%);
+	padding: 10px;
+}
+#articles article h2 {
+	font-size: 18px;
+	padding: 10px;
+	color: hsl(233,26%,24%);
+}
+#articles article h2:hover {
+	color:  hsl(136, 65%, 51%);
+}
+#articles article p {
+	width: 73%;
+	font-size: 12px;
+	color: hsl(233, 8%, 62%);
+	padding: 0 10px;
+}
+footer {
+	background-color: hsl(233, 26%, 24%);
+	width: 100%;
+	height: 200px;
+}
+footer .svg-elements {
+	width: 13%;
+	float: left;
+}
+footer .svg-elements #logo {
+	width: 100%;
+	padding: 10px 0px;
+	margin-bottom: 50px;
+}
+.svg-elements .social-icons {
+	padding-top: 10px;
+    padding-left: 10px;
+}
+footer ul {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	margin-left: 10%
+}
+footer ul li {
+	list-style-type: none;
+    display: inline-block;
+    width: 40%;
+    margin: 15px;
+}
+footer ul li a {
+	text-decoration: none;
+	color: hsl(220, 16%, 96%);
+}
+footer ul li a:hover {
+	color:  hsl(136, 65%, 51%);
+}
+footer input {
+    margin-top: 50px;
+    margin-left: 4%;
+}
+footer p {
+	float: right;
+    text-align: right;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    color: hsl(220, 16%, 96%);
+    margin-right: 5%;
+}
+@media screen and (max-width: 375px) {
+	header {
+		margin-bottom: 20px;
+	}
+	header input {
+		display: none;
+	}
+	header ul {
+		display: none;
+	}
+	.mobile-device {
+		display: block;
+		position: absolute;
+		left: -51px;
+	    top: 55px;
+	    z-index: 10;
+	    width: 90%;
+	    height: 259px;
+		border-radius: 5px;
+		background-color: #fff;
+	}
+	.mobile-device li{
+		display: block;
+	    text-align: center;
+	    margin: 5px 32% 10px;
+	}
+	.mobile-device li:hover {
+		border: none;
+	}
+	.closeButton {
+		float: right;
+		margin: 5px;
+
+	}
+	#hamburger {
+		display: inline-block;
+		float: right;
+		margin: 10px 10px 0 0;
+	}
+	#banking {
+		display:flex;
+   		flex-direction: column-reverse;  
+	}
+	#banking .content-container {
+		width: 95%;
+    	margin-left: 5%;
+	}
+	#banking .img-container {
+		width: 100%;
+	}
+	.mockups img {
+        transform: translate(0px, -104px);
+	}
+	#banking input {
+		margin-left: 30%;
+    	margin-bottom: 10%;
+	}
+	#benefits h1 {
+		width: 60%;
+		margin-left: 20%;
+	}
+	#benefits> p {
+    	width: 93%;
+	    text-align: center;
+	    margin: 4%;
+	}
+	#benefits article {
+		display: block;
+		width: 98%;
+	}
+	#benefits article img {
+		margin: 30px 0 31px 40%;
+	}
+	#benefits article:first-of-type, article {
+    	margin-left: 2%;
+    }
+	#benefits article h3 {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	}
+	#benefits article p {
+		width: 93%;
+    	margin-left: 5%;
+    	text-align: center;
+	}
+	#articles h1 {
+		text-align: center;
+	}
+	#articles article {
+		display: block;
+		width: 90%;
+		margin-bottom: 10px;
+		margin-left: 5%;
+	}
+	#articles article:first-of-type {
+    	margin-left: 5%;
+	}
+	footer {
+		height: 600px;
+	}
+	footer .svg-elements {
+	    width: 100%;
+	}
+	footer .svg-elements #logo {
+	    display: block;
+    	margin: 20px 0%;
+	}
+	.svg-elements>.social-icons {
+    	display: block;
+    	width: 100%;
+    	padding: 0;
+    }
+    footer ul {
+		display: block;
+	    width: 100%;
+	    margin-left: 0%;
+	}
+	footer ul li {
+	    display: inline-block;
+	    width: 100%;
+	    margin: 15px 0;
+	    text-align: center;
+	}
+	footer input {
+	    margin-left: 31%;
+	}
+	footer p {
+	    text-align: center;
+	    margin-right: 0;
+	    margin-top: 40px;
+	}
+}
